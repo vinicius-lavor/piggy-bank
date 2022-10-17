@@ -15,7 +15,13 @@ struct Piggy: Codable {
 }
 
 struct PiggyApi: Codable {
-    let base_code: String
-    let target_code: String
-    let conversion_rate: Double
+    let currentCoin: String
+    let targetCoin: String
+    let conversionRate: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case currentCoin = "base_code"
+        case targetCoin = "target_code"
+        case conversionRate = "conversion_rate"
+    }
 }
