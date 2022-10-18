@@ -14,6 +14,7 @@ class PiggyTableViewController: UIViewController, UITableViewDelegate, UITableVi
         piggyTableView.register(PiggyTableViewCell.self, forCellReuseIdentifier: PiggyTableViewCell.identifier)
         piggyTableView.delegate = self
         piggyTableView.dataSource = self
+//        piggyTableView.largeContentTitle = "Teste"
     }
     
     override func viewDidLayoutSubviews() {
@@ -26,7 +27,7 @@ class PiggyTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -20,6 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = PiggyTableViewController() // Your initial view controller.
         window.makeKeyAndVisible()
         self.window = window
+        
+//        Locale.availableIdentifiers.forEach {
+//            print(Locale(identifier: $0).currencySymbol!)
+//        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

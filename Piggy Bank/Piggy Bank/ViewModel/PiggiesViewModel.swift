@@ -20,10 +20,10 @@ class PiggiesViewModel: NSObject {
     override init() {
         super.init()
         self.api = Api()
-        callFuncToGetEmpData()
+        callFuncToGetPiggyData()
     }
     
-    func callFuncToGetEmpData(){
+    func callFuncToGetPiggyData(){
         self.api.getConversionRates {(coins) in
             self.coins = coins
         }

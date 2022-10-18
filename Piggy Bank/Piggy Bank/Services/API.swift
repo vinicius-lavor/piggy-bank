@@ -16,6 +16,7 @@ class Api:NSObject {
             do {
                 let coins = try JSONDecoder().decode(Piggy.self, from: data)
                 completion(coins)
+                print(coins)
             } catch {
                 print(error)
             }

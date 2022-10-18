@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Piggy: Codable {
-    let title: String
-    let targetValue: Double
-    let valueYouHave: Double
-    let apiData: PiggyApi
-}
+//struct Piggy: Codable {
+//    let title: String
+//    let targetValue: Double
+//    let valueYouHave: Double
+//    let apiData: PiggyApi
+//}
 
-struct PiggyApi: Codable {
+struct Piggy: Codable {
     let currentCoin: String
     let targetCoin: String
     let conversionRate: Double
