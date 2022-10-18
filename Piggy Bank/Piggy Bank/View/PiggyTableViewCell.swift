@@ -37,7 +37,7 @@ class PiggyTableViewCell: UITableViewCell {
         let piggyValue = UILabel()
         piggyValue.textColor = .black
         piggyValue.font = .systemFont(ofSize: 17, weight: .bold)
-        piggyValue.text = "500 de ¥1000"
+        piggyValue.text = "50000 de ¥100000"
         return piggyValue
     }()
     

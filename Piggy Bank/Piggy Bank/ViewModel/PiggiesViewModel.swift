@@ -9,7 +9,7 @@ import Foundation
 
 class PiggiesViewModel: NSObject {
     private var api: Api!
-    private(set) var coins: Piggy! {
+    private(set) var coins: PiggyConversion! {
         didSet {
             self.bindPiggyViewModelToController()
         }

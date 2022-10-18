@@ -14,14 +14,14 @@ import Foundation
 //    let apiData: PiggyApi
 //}
 
-struct Piggy: Codable {
+struct PiggyConversion: Codable {
     let currentCoin: String
     let targetCoin: String
-    let conversionRate: Double
+    let conversionRate: String
     
     enum CodingKeys: String, CodingKey {
-        case currentCoin = "base_code"
-        case targetCoin = "target_code"
-        case conversionRate = "conversion_rate"
+        case currentCoin = "code"
+        case targetCoin = "codein"
+        case conversionRate = "bid"
     }
 }

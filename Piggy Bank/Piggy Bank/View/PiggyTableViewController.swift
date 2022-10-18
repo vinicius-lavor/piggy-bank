@@ -40,5 +40,8 @@ class PiggyTableViewController: UIViewController, UITableViewDelegate, UITableVi
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        return 100
 //    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+    }
     
 }

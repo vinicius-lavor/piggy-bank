@@ -8,14 +8,15 @@
 import Foundation
 
 class Api:NSObject {
-    func getConversionRates(completion: @escaping (Piggy) -> ()){
-        guard let url = URL(string: "https://v6.exchangerate-api.com/v6/c72162e77ea600fbe7fb1c4f/pair/BRL/JPY") else {return}
+    func getConversionRates(completion: @escaping (PiggyConversion) -> ()){
+        guard let url = URL(string: "https://economia.awesomeapi.com.br/BRL-USD") else {return}
         
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data, error == nil else {return}
             do {
-                let coins = try JSONDecoder().decode(Piggy.self, from: data)
-                completion(coins)
+                let coins = try JSONDecoder().decode([PiggyConversion].self, from: data)
+                guard let coinElement = coins.first else { return }
+                completion(coinElement)
                 print(coins)
             } catch {
                 print(error)
