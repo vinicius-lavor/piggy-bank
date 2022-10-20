@@ -17,13 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = PiggyTableViewController() // Your initial view controller.
+        window.rootViewController = UINavigationController(rootViewController: PiggyTableViewController()) // Your initial view controller.
         window.makeKeyAndVisible()
         self.window = window
         
-//        Locale.availableIdentifiers.forEach {
-//            print(Locale(identifier: $0).currencySymbol!)
-//        }
+//        let components: [String: String] = [
+//        ]
+//        
+//        print(Locale(identifier: ))
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

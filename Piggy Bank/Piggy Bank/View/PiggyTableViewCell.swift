@@ -10,6 +10,8 @@ import UIKit
 class PiggyTableViewCell: UITableViewCell {
     static let identifier = "PiggyTableViewCell"
     
+    var piggyList: [Piggy] = piggiesArrayList
+
     private let cardView: UIView = {
         let card = UIView()
         card.backgroundColor = .white
@@ -20,15 +22,14 @@ class PiggyTableViewCell: UITableViewCell {
         card.layer.shadowOpacity = 0.15
         card.layer.shadowOffset = CGSize(width: 0, height: 0)
         card.layer.masksToBounds = false
-        
         return card
     }()
     
     private let piggyTitle: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = .systemFont(ofSize: 24, weight: .bold)
-        label.text = "Japão"
+        label.font = .systemFont(ofSize: 18, weight: .bold)
+//        label.text = piggyCustomLowProfileKeyboard.title
         return label
     }()
     
@@ -36,8 +37,8 @@ class PiggyTableViewCell: UITableViewCell {
         
         let piggyValue = UILabel()
         piggyValue.textColor = .black
-        piggyValue.font = .systemFont(ofSize: 17, weight: .bold)
-        piggyValue.text = "50000 de ¥100000"
+        piggyValue.font = .systemFont(ofSize: 14, weight: .bold)
+//        piggyValue.text =  "\(piggyCustomLowProfileKeyboard.valueYouHave) de \(piggyCustomLowProfileKeyboard.targetValue)\(piggyCustomLowProfileKeyboard.currentCoin)"
         return piggyValue
     }()
     
@@ -47,6 +48,13 @@ class PiggyTableViewCell: UITableViewCell {
         progress.progressTintColor = .systemMint
         return progress
     }()
+    
+    func config(with indexPath: IndexPath) {
+        piggyTitle.text = piggiesArrayList[indexPath.row].title
+        piggyValue.text = "\(piggiesArrayList[indexPath.row].valueYouHave) de \(piggiesArrayList[indexPath.row].targetValue)\(piggiesArrayList[indexPath.row].currentCoin)"
+        progressBar.setProgress(Float(piggiesArrayList[indexPath.row].valueYouHave / piggiesArrayList[indexPath.row].targetValue), animated: false)
+        
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -59,9 +67,8 @@ class PiggyTableViewCell: UITableViewCell {
         piggyTitle.translatesAutoresizingMaskIntoConstraints = false
         piggyValue.translatesAutoresizingMaskIntoConstraints = false
         progressBar.translatesAutoresizingMaskIntoConstraints = false
-//        progressBar.frame = CGRect(width: contentView.frame.size.width - 20, height: 36)
         
-        progressBar.setProgress(0.5, animated: false)
+//        progressBar.setProgress(Float(piggyCustomLowProfileKeyboard.valueYouHave / piggyCustomLowProfileKeyboard.targetValue), animated: false)
         progressBar.layer.cornerRadius = 8
         progressBar.clipsToBounds = true
         progressBar.layer.sublayers![1].cornerRadius = 8

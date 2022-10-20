@@ -19,6 +19,7 @@
 		988809AE28F5FB540067E3F1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988809AD28F5FB540067E3F1 /* API.swift */; };
 		98F470C228F9871300264E1E /* PiggiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C128F9871300264E1E /* PiggiesViewModel.swift */; };
 		98F470C428F9A53300264E1E /* PiggyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C328F9A53300264E1E /* PiggyTableViewCell.swift */; };
+		98F470C628FF3F6400264E1E /* PiggyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C528FF3F6400264E1E /* PiggyConversionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		988809AD28F5FB540067E3F1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		98F470C128F9871300264E1E /* PiggiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggiesViewModel.swift; sourceTree = "<group>"; };
 		98F470C328F9A53300264E1E /* PiggyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyTableViewCell.swift; sourceTree = "<group>"; };
+		98F470C528FF3F6400264E1E /* PiggyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyConversionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				982FEDD428F836A000634B0E /* PiggyModel.swift */,
+				98F470C528FF3F6400264E1E /* PiggyConversionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				9888097728F5DB7E0067E3F1 /* AppDelegate.swift in Sources */,
 				982FEDD528F836A000634B0E /* PiggyModel.swift in Sources */,
 				9888098128F5DB7E0067E3F1 /* Piggy_Bank.xcdatamodeld in Sources */,
+				98F470C628FF3F6400264E1E /* PiggyConversionModel.swift in Sources */,
 				9888097928F5DB7E0067E3F1 /* SceneDelegate.swift in Sources */,
 				98F470C228F9871300264E1E /* PiggiesViewModel.swift in Sources */,
 				98F470C428F9A53300264E1E /* PiggyTableViewCell.swift in Sources */,
