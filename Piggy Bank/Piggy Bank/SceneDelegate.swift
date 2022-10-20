@@ -20,11 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = UINavigationController(rootViewController: PiggyTableViewController()) // Your initial view controller.
         window.makeKeyAndVisible()
         self.window = window
-        
-//        let components: [String: String] = [
-//        ]
-//        
-//        print(Locale(identifier: ))
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

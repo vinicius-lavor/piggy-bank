@@ -28,7 +28,7 @@ class PiggyTableViewCell: UITableViewCell {
     private let piggyTitle: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = .systemFont(ofSize: 18, weight: .bold)
+        label.font = .systemFont(ofSize: 20, weight: .bold)
 //        label.text = piggyCustomLowProfileKeyboard.title
         return label
     }()
@@ -37,7 +37,7 @@ class PiggyTableViewCell: UITableViewCell {
         
         let piggyValue = UILabel()
         piggyValue.textColor = .black
-        piggyValue.font = .systemFont(ofSize: 14, weight: .bold)
+        piggyValue.font = .systemFont(ofSize: 16, weight: .bold)
 //        piggyValue.text =  "\(piggyCustomLowProfileKeyboard.valueYouHave) de \(piggyCustomLowProfileKeyboard.targetValue)\(piggyCustomLowProfileKeyboard.currentCoin)"
         return piggyValue
     }()
@@ -51,7 +51,7 @@ class PiggyTableViewCell: UITableViewCell {
     
     func config(with indexPath: IndexPath) {
         piggyTitle.text = piggiesArrayList[indexPath.row].title
-        piggyValue.text = "\(piggiesArrayList[indexPath.row].valueYouHave) de \(piggiesArrayList[indexPath.row].targetValue)\(piggiesArrayList[indexPath.row].currentCoin)"
+        piggyValue.text = "\(piggiesArrayList[indexPath.row].valueYouHave) de \(piggiesArrayList[indexPath.row].targetValue)\(Locale(identifier: piggiesArrayList[indexPath.row].currentCoin).currencySymbol!)"
         progressBar.setProgress(Float(piggiesArrayList[indexPath.row].valueYouHave / piggiesArrayList[indexPath.row].targetValue), animated: false)
         
     }
