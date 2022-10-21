@@ -18,6 +18,7 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
         dataTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         dataTableView.delegate = self
         dataTableView.dataSource = self
+        self.title = "Edit"
         // Do any additional setup after loading the view.
     }
     
