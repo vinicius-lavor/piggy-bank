@@ -37,14 +37,14 @@ class PiggyTableViewCell: UITableViewCell {
         
         let piggyValue = UILabel()
         piggyValue.textColor = .black
-        piggyValue.font = .systemFont(ofSize: 16, weight: .bold)
+        piggyValue.font = .systemFont(ofSize: 16, weight: .medium)
 //        piggyValue.text =  "\(piggyCustomLowProfileKeyboard.valueYouHave) de \(piggyCustomLowProfileKeyboard.targetValue)\(piggyCustomLowProfileKeyboard.currentCoin)"
         return piggyValue
     }()
     
     private let progressBar: UIProgressView = {
         let progress = UIProgressView(progressViewStyle: .bar)
-        progress.trackTintColor = .secondarySystemBackground
+        progress.trackTintColor = .systemGray4
         progress.progressTintColor = .systemMint
         return progress
     }()
@@ -95,7 +95,7 @@ class PiggyTableViewCell: UITableViewCell {
             piggyValue.topAnchor.constraint(equalToSystemSpacingBelow: piggyTitle.bottomAnchor, multiplier: 2),
             piggyValue.leadingAnchor.constraint(equalTo: self.cardView.leadingAnchor, constant: 8),
             piggyValue.trailingAnchor.constraint(equalTo: self.cardView.trailingAnchor),
-            piggyValue.bottomAnchor.constraint(equalTo: progressBar.topAnchor)
+            piggyValue.bottomAnchor.constraint(equalTo: progressBar.topAnchor, constant: -8)
 
         ])
         

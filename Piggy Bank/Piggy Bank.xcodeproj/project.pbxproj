@@ -20,6 +20,7 @@
 		98F470C228F9871300264E1E /* PiggiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C128F9871300264E1E /* PiggiesViewModel.swift */; };
 		98F470C428F9A53300264E1E /* PiggyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C328F9A53300264E1E /* PiggyTableViewCell.swift */; };
 		98F470C628FF3F6400264E1E /* PiggyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C528FF3F6400264E1E /* PiggyConversionModel.swift */; };
+		98F470CA2902E12300264E1E /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F470C92902E12300264E1E /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		98F470C128F9871300264E1E /* PiggiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggiesViewModel.swift; sourceTree = "<group>"; };
 		98F470C328F9A53300264E1E /* PiggyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyTableViewCell.swift; sourceTree = "<group>"; };
 		98F470C528FF3F6400264E1E /* PiggyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyConversionModel.swift; sourceTree = "<group>"; };
+		98F470C92902E12300264E1E /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				9888097A28F5DB7E0067E3F1 /* ViewController.swift */,
 				982FEDD828F8583C00634B0E /* PiggyTableViewController.swift */,
 				98F470C328F9A53300264E1E /* PiggyTableViewCell.swift */,
+				98F470C92902E12300264E1E /* DataViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				98F470C428F9A53300264E1E /* PiggyTableViewCell.swift in Sources */,
 				982FEDD928F8583C00634B0E /* PiggyTableViewController.swift in Sources */,
 				988809AE28F5FB540067E3F1 /* API.swift in Sources */,
+				98F470CA2902E12300264E1E /* DataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

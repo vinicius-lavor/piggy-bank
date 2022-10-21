@@ -58,7 +58,7 @@ class PiggyTableViewController: UIViewController, UITableViewDelegate, UITableVi
 //    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
-        self.show(ViewController(), sender: self)
+        self.show(DataViewController(), sender: self)
     }
     
     
